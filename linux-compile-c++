@@ -1,5 +1,5 @@
 /home/steve/Qt5.2.1/5.2.1/gcc/bin/qmake -project
-echo "QT += webkit webkitwidgets network script widgets gui core" >> test.pro
-echo "INCLUDEPATH += lib_json/include" >> test.pro
+echo "QT += webkit webkitwidgets network script widgets gui core" >> facehack-c.pro
+echo "INCLUDEPATH += lib_json/include" >> facehack-c.pro
 /home/steve/Qt5.2.1/5.2.1/gcc/bin/qmake -makefile
 make

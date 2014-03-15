@@ -1,0 +1,207 @@
+FBApi Sat Mar 15 20:47:15 2014  
+FBApi Sat Mar 15 20:47:15 2014  Authentication:https://www.facebook.com/dialog/oauth?client_id=539751139430183&redirect_uri=http://www.facebook.com/connect/login_success.html&type=user_agent&display=popup&scope=user_photos,user_videos,user_activities,user_groups,user_interests,user_likes,user_notes,user_online_presence,user_status,read_friendlists,read_requests,offline_access,friends_activities,friends_events,friends_groups,friends_likes,friends_notes,friends_online_presence,publish_stream,read_mailbox,read_stream
+FBApi Sat Mar 15 20:47:15 2014  Authentication DONE
+FBApi Sat Mar 15 20:47:16 2014  ---------------------------------------------------
+FBApi Sat Mar 15 20:47:16 2014  Item Url:https://www.facebook.com/dialog/oauth?client_id=539751139430183&redirect_uri=http://www.facebook.com/connect/login_success.html&type=user_agent&display=popup&scope=user_photos,user_videos,user_activities,user_groups,user_interests,user_likes,user_notes,user_online_presence,user_status,read_friendlists,read_requests,offline_access,friends_activities,friends_events,friends_groups,friends_likes,friends_notes,friends_online_presence,publish_stream,read_mailbox,read_stream
+FBApi Sat Mar 15 20:47:16 2014  Content Type:text/html;charset=utf-8
+FBApi Sat Mar 15 20:47:16 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:16 2014  Unknown error
+FBApi Sat Mar 15 20:47:16 2014  READ ALL
+FBApi Sat Mar 15 20:47:16 2014  
+FBApi Sat Mar 15 20:47:16 2014  http error number
+FBApi Sat Mar 15 20:47:16 2014  200
+FBApi Sat Mar 15 20:47:16 2014  qt error number
+FBApi Sat Mar 15 20:47:16 2014  0
+FBApi Sat Mar 15 20:47:17 2014  Page loaded:https://www.facebook.com/dialog/oauth?client_id=539751139430183&redirect_uri=http://www.facebook.com/connect/login_success.html&type=user_agent&display=popup&scope=user_photos,user_videos,user_activities,user_groups,user_interests,user_likes,user_notes,user_online_presence,user_status,read_friendlists,read_requests,offline_access,friends_activities,friends_events,friends_groups,friends_likes,friends_notes,friends_online_presence,publish_stream,read_mailbox,read_stream
+FBApi Sat Mar 15 20:47:17 2014  Authentication page loaded!
+FBApi Sat Mar 15 20:47:17 2014  ---------------------------------------------------
+FBApi Sat Mar 15 20:47:17 2014  Item Url:https://www.facebook.com/dialog/oauth?client_id=539751139430183&redirect_uri=http://www.facebook.com/connect/login_success.html&type=user_agent&display=popup&scope=user_photos,user_videos,user_activities,user_groups,user_interests,user_likes,user_notes,user_online_presence,user_status,read_friendlists,read_requests,offline_access,friends_activities,friends_events,friends_groups,friends_likes,friends_notes,friends_online_presence,publish_stream,read_mailbox,read_stream
+FBApi Sat Mar 15 20:47:17 2014  Content Type:text/html; charset=utf-8
+FBApi Sat Mar 15 20:47:17 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:17 2014  Unknown error
+FBApi Sat Mar 15 20:47:17 2014  READ ALL
+FBApi Sat Mar 15 20:47:17 2014  
+FBApi Sat Mar 15 20:47:17 2014  http error number
+FBApi Sat Mar 15 20:47:17 2014  302
+FBApi Sat Mar 15 20:47:17 2014  qt error number
+FBApi Sat Mar 15 20:47:17 2014  0
+FBApi Sat Mar 15 20:47:17 2014  ---------------------------------------------------
+FBApi Sat Mar 15 20:47:17 2014  Item Url:https://www.facebook.com/login.php?skip_api_login=1&api_key=539751139430183&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fredirect_uri%3Dhttp%253A%252F%252Fwww.facebook.com%252Fconnect%252Flogin_success.html%26display%3Dpopup%26scope%3Duser_photos%252Cuser_videos%252Cuser_activities%252Cuser_groups%252Cuser_interests%252Cuser_likes%252Cuser_notes%252Cuser_online_presence%252Cuser_status%252Cread_friendlists%252Cread_requests%252Coffline_access%252Cfriends_activities%252Cfriends_events%252Cfriends_groups%252Cfriends_likes%252Cfriends_notes%252Cfriends_online_presence%252Cpublish_stream%252Cread_mailbox%252Cread_stream%26type%3Duser_agent%26client_id%3D539751139430183%26ret%3Dlogin&cancel_uri=http%3A%2F%2Fwww.facebook.com%2Fconnect%2Flogin_success.html%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&display=popup
+FBApi Sat Mar 15 20:47:17 2014  Content Type:text/html; charset=utf-8
+FBApi Sat Mar 15 20:47:17 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:17 2014  Unknown error
+FBApi Sat Mar 15 20:47:17 2014  READ ALL
+FBApi Sat Mar 15 20:47:17 2014  
+FBApi Sat Mar 15 20:47:17 2014  http error number
+FBApi Sat Mar 15 20:47:17 2014  200
+FBApi Sat Mar 15 20:47:17 2014  qt error number
+FBApi Sat Mar 15 20:47:17 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:18 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:18 2014  Unknown error
+FBApi Sat Mar 15 20:47:18 2014  READ ALL
+FBApi Sat Mar 15 20:47:18 2014  
+FBApi Sat Mar 15 20:47:18 2014  http error number
+FBApi Sat Mar 15 20:47:18 2014  200
+FBApi Sat Mar 15 20:47:18 2014  qt error number
+FBApi Sat Mar 15 20:47:18 2014  0
+FBApi Sat Mar 15 20:47:19 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:19 2014  Unknown error
+FBApi Sat Mar 15 20:47:19 2014  READ ALL
+FBApi Sat Mar 15 20:47:19 2014  
+FBApi Sat Mar 15 20:47:19 2014  http error number
+FBApi Sat Mar 15 20:47:19 2014  200
+FBApi Sat Mar 15 20:47:19 2014  qt error number
+FBApi Sat Mar 15 20:47:19 2014  0
+FBApi Sat Mar 15 20:47:19 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:19 2014  Unknown error
+FBApi Sat Mar 15 20:47:19 2014  READ ALL
+FBApi Sat Mar 15 20:47:19 2014  
+FBApi Sat Mar 15 20:47:19 2014  http error number
+FBApi Sat Mar 15 20:47:19 2014  200
+FBApi Sat Mar 15 20:47:19 2014  qt error number
+FBApi Sat Mar 15 20:47:19 2014  0
+FBApi Sat Mar 15 20:47:19 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:19 2014  Unknown error
+FBApi Sat Mar 15 20:47:19 2014  READ ALL
+FBApi Sat Mar 15 20:47:19 2014  
+FBApi Sat Mar 15 20:47:19 2014  http error number
+FBApi Sat Mar 15 20:47:19 2014  200
+FBApi Sat Mar 15 20:47:19 2014  qt error number
+FBApi Sat Mar 15 20:47:19 2014  0
+FBApi Sat Mar 15 20:47:19 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:19 2014  Unknown error
+FBApi Sat Mar 15 20:47:19 2014  READ ALL
+FBApi Sat Mar 15 20:47:19 2014  
+FBApi Sat Mar 15 20:47:19 2014  http error number
+FBApi Sat Mar 15 20:47:19 2014  200
+FBApi Sat Mar 15 20:47:19 2014  qt error number
+FBApi Sat Mar 15 20:47:19 2014  0
+FBApi Sat Mar 15 20:47:19 2014  Page loaded:https://www.facebook.com/login.php?skip_api_login=1&api_key=539751139430183&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fredirect_uri%3Dhttp%253A%252F%252Fwww.facebook.com%252Fconnect%252Flogin_success.html%26display%3Dpopup%26scope%3Duser_photos%252Cuser_videos%252Cuser_activities%252Cuser_groups%252Cuser_interests%252Cuser_likes%252Cuser_notes%252Cuser_online_presence%252Cuser_status%252Cread_friendlists%252Cread_requests%252Coffline_access%252Cfriends_activities%252Cfriends_events%252Cfriends_groups%252Cfriends_likes%252Cfriends_notes%252Cfriends_online_presence%252Cpublish_stream%252Cread_mailbox%252Cread_stream%26type%3Duser_agent%26client_id%3D539751139430183%26ret%3Dlogin&cancel_uri=http%3A%2F%2Fwww.facebook.com%2Fconnect%2Flogin_success.html%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&display=popup
+FBApi Sat Mar 15 20:47:19 2014  Authentication page loaded!
+FBApi Sat Mar 15 20:47:20 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:20 2014  Unknown error
+FBApi Sat Mar 15 20:47:20 2014  READ ALL
+FBApi Sat Mar 15 20:47:20 2014  
+FBApi Sat Mar 15 20:47:20 2014  http error number
+FBApi Sat Mar 15 20:47:20 2014  200
+FBApi Sat Mar 15 20:47:20 2014  qt error number
+FBApi Sat Mar 15 20:47:20 2014  0
+FBApi Sat Mar 15 20:47:27 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:27 2014  Unknown error
+FBApi Sat Mar 15 20:47:27 2014  READ ALL
+FBApi Sat Mar 15 20:47:27 2014  
+FBApi Sat Mar 15 20:47:27 2014  http error number
+FBApi Sat Mar 15 20:47:27 2014  200
+FBApi Sat Mar 15 20:47:27 2014  qt error number
+FBApi Sat Mar 15 20:47:27 2014  0
+FBApi Sat Mar 15 20:47:33 2014  ---------------------------------------------------
+FBApi Sat Mar 15 20:47:33 2014  Item Url:https://www.facebook.com/login.php?login_attempt=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fredirect_uri%3Dhttp%253A%252F%252Fwww.facebook.com%252Fconnect%252Flogin_success.html%26display%3Dpopup%26scope%3Duser_photos%252Cuser_videos%252Cuser_activities%252Cuser_groups%252Cuser_interests%252Cuser_likes%252Cuser_notes%252Cuser_online_presence%252Cuser_status%252Cread_friendlists%252Cread_requests%252Coffline_access%252Cfriends_activities%252Cfriends_events%252Cfriends_groups%252Cfriends_likes%252Cfriends_notes%252Cfriends_online_presence%252Cpublish_stream%252Cread_mailbox%252Cread_stream%26type%3Duser_agent%26client_id%3D539751139430183%26ret%3Dlogin&popup=1
+FBApi Sat Mar 15 20:47:33 2014  Content Type:text/html; charset=utf-8
+FBApi Sat Mar 15 20:47:33 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:33 2014  Unknown error
+FBApi Sat Mar 15 20:47:33 2014  READ ALL
+FBApi Sat Mar 15 20:47:33 2014  
+FBApi Sat Mar 15 20:47:33 2014  http error number
+FBApi Sat Mar 15 20:47:33 2014  302
+FBApi Sat Mar 15 20:47:33 2014  qt error number
+FBApi Sat Mar 15 20:47:33 2014  0
+FBApi Sat Mar 15 20:47:34 2014  ---------------------------------------------------
+FBApi Sat Mar 15 20:47:34 2014  Item Url:https://www.facebook.com/dialog/oauth?redirect_uri=http%3A%2F%2Fwww.facebook.com%2Fconnect%2Flogin_success.html&display=popup&scope=user_photos%2Cuser_videos%2Cuser_activities%2Cuser_groups%2Cuser_interests%2Cuser_likes%2Cuser_notes%2Cuser_online_presence%2Cuser_status%2Cread_friendlists%2Cread_requests%2Coffline_access%2Cfriends_activities%2Cfriends_events%2Cfriends_groups%2Cfriends_likes%2Cfriends_notes%2Cfriends_online_presence%2Cpublish_stream%2Cread_mailbox%2Cread_stream&type=user_agent&client_id=539751139430183&ret=login&ext=1394916453&hash=AebaET2R8KqITsac
+FBApi Sat Mar 15 20:47:34 2014  Content Type:text/html; charset=utf-8
+FBApi Sat Mar 15 20:47:34 2014  ERROR STRING
+FBApi Sat Mar 15 20:47:34 2014  Unknown error
+FBApi Sat Mar 15 20:47:34 2014  READ ALL
+FBApi Sat Mar 15 20:47:34 2014  
+FBApi Sat Mar 15 20:47:34 2014  http error number
+FBApi Sat Mar 15 20:47:34 2014  302
+FBApi Sat Mar 15 20:47:34 2014  qt error number
+FBApi Sat Mar 15 20:47:34 2014  0
+FBApi Sat Mar 15 20:47:34 2014  ---------------------------------------------------
+FBApi Sat Mar 15 20:47:34 2014  Item Url:http://www.facebook.com/connect/login_success.html#access_token=CAAHq5pruzycBAHYtbAJMlL5O92qIUWVnIOb1PBKnLKZCCydt0YrszXb09JvZBZAsvJuQpT5UXgc1LtFHtD18hywabIoZCckFRqqQfAQTgq4aSGoqvC68rEMEyRW1UnhgLDVWlHxGHYZBL5tsZAR0jZBfWZAxTVPM5zKRHZB9HoievQPvXMmHRMgHNCSY0gL6ZBxmIZD&expires_in=4346
+FBApi Sat Mar 15 20:47:34 2014  Content Type:text/html; charset=utf-8
+FBApi Sat Mar 15 20:47:34 2014  finishedNetWorkSlot:AuthorizAndAuthenticatUser use are succsesfuly authorize
+FBApi Sat Mar 15 20:47:34 2014  Page loaded:https://www.facebook.com/login.php?skip_api_login=1&api_key=539751139430183&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fredirect_uri%3Dhttp%253A%252F%252Fwww.facebook.com%252Fconnect%252Flogin_success.html%26display%3Dpopup%26scope%3Duser_photos%252Cuser_videos%252Cuser_activities%252Cuser_groups%252Cuser_interests%252Cuser_likes%252Cuser_notes%252Cuser_online_presence%252Cuser_status%252Cread_friendlists%252Cread_requests%252Coffline_access%252Cfriends_activities%252Cfriends_events%252Cfriends_groups%252Cfriends_likes%252Cfriends_notes%252Cfriends_online_presence%252Cpublish_stream%252Cread_mailbox%252Cread_stream%26type%3Duser_agent%26client_id%3D539751139430183%26ret%3Dlogin&cancel_uri=http%3A%2F%2Fwww.facebook.com%2Fconnect%2Flogin_success.html%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%23_%3D_&display=popup
+FBApi Sat Mar 15 20:47:34 2014  Authentication page loaded!
+FBApi Sat Mar 15 20:47:34 2014  Page loaded:
+FBApi Sat Mar 15 20:47:34 2014  Authentication page loaded!
+FBApi Sat Mar 15 20:47:41 2014  yp

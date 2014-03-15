@@ -10,7 +10,7 @@
 
 #include "ui_main_gui.h"
 #include <QtGui> 
-#include <QtWidgets>
+#include <QtWidgets/QLabel>
 
 
 //========================

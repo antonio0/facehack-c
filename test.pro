@@ -35,3 +35,11 @@ SOURCES += FBApi.cpp \
            lib_json/json_writer.cpp
 QT += webkit webkitwidgets network script widgets gui core
 INCLUDEPATH += lib_json/include
+QT += webkit webkitwidgets network script widgets gui core
+INCLUDEPATH += lib_json/include
+QT += webkit webkitwidgets network script widgets gui core
+INCLUDEPATH += lib_json/include lib_json/include/json
+QT += webkit webkitwidgets network script widgets gui core
+INCLUDEPATH += lib_json/include
+QT += webkit webkitwidgets network script widgets gui core
+INCLUDEPATH += lib_json/include
