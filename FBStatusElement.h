@@ -15,17 +15,29 @@ class FBStatusElement
 
 	private: 
 		FBStatusElement* _instance;
-		
+			
+		QString id; 
+		QString message; 
+		QString time;	
 
 	public: 
 		FBStatusElement* getInstance();
 		
 		FBStatusElement(QString uid, QString mess, QString updatedtime);
-		
-		QString id; 
-		QString message; 
-		QString time;
 
+
+		QString getId() {
+		   return id;
+		}
+
+		QString getMessage() {
+		   return message;
+		}
+
+		QString getTime() {
+		   return time;
+		}
+		
 };
 
 #endif

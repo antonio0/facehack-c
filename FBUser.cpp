@@ -6,10 +6,11 @@
 #include <vector>
 #include "json/json.h"
 
-FBUser::FBUser(QString uid, QString name) 
+FBUser::FBUser(QString uid, QString name, QString picture_url) 
 {
 	this->id = uid;
 	this->name = name;
+	this->profile_pic = picture_url;
 }
 
 FBUser::FBUser(QString uid)
@@ -18,6 +19,7 @@ FBUser::FBUser(QString uid)
 	QMap<QString, QString> args1;
     QString ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+uid+"?";
 	args1.insert("access_token",FBApi::getInstance()->GetUserAccessToken());
+	args1.insert("fields", "id,name,first_name,last_name,link,birthday,picture");
 
 	QString response1;
 	FBApi::getInstance()->InvokeAPI(FBApi::GET,
@@ -41,6 +43,7 @@ FBUser::FBUser(QString uid)
 	this->gender = QString::fromStdString(root["gender"].asString()); 
 	this->email = QString::fromStdString(root["email"].asString()); 
 	this->username = QString::fromStdString(root["username"].asString());
+	this->profile_pic = QString::fromStdString(root["picture"]["data"]["url"].asString());
 }
 
 std::vector<FBUser> FBUser::getFriends() 
@@ -48,7 +51,7 @@ std::vector<FBUser> FBUser::getFriends()
 	QMap<QString, QString> args1;
     QString ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+this->id+"?";
 	args1.insert("access_token",FBApi::getInstance()->GetUserAccessToken());
-	args1.insert("fields", "friends");
+	args1.insert("fields", "friends.fields(id,name,picture)");
 
 	QString response1;
 	FBApi::getInstance()->InvokeAPI(FBApi::GET,
@@ -65,13 +68,14 @@ std::vector<FBUser> FBUser::getFriends()
 	Json::Value friends_data = root["friends"]["data"];
 
 	std::vector<FBUser> friends;
-	QString friend_id, friend_name;
+	QString friend_id, friend_name, friend_picture;
 
 	for (int i = 0; i < friends_data.size(); i++) 
 	{
 		friend_id = QString::fromStdString( friends_data[i]["id"].asString() );
 		friend_name = QString::fromStdString( friends_data[i]["name"].asString() );
-		friends.push_back( FBUser(friend_id, friend_name) );
+		friend_picture = QString::fromStdString( friends_data[i]["picture"]["data"]["url"].asString() );
+		friends.push_back( FBUser(friend_id, friend_name, friend_picture) );
 	}
 
 	return friends;
