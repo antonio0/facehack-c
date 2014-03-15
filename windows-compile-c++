@@ -1,0 +1,8 @@
+wine /home/steve/.wine/drive_c/Qt/Qt5.2.1/5.2.1/mingw48_32/bin/qmake.exe -project
+echo "QT += webkit webkitwidgets network script widgets gui core" >> test.pro
+echo "INCLUDEPATH += lib_json/include lib_json/include/json" >> test.pro
+wine /home/steve/.wine/drive_c/Qt/Qt5.2.1/5.2.1/mingw48_32/bin/qmake.exe -makefile
+wine /home/steve/.wine/drive_c/Qt/Qt5.2.1/Tools/mingw48_32/bin/mingw32-make.exe
+rm release/*.o
+rm release/*.cpp
+
