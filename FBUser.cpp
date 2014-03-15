@@ -19,7 +19,6 @@ FBUser::FBUser(QString uid)
 	QMap<QString, QString> args1;
     QString ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+uid+"?";
 	args1.insert("access_token",FBApi::getInstance()->GetUserAccessToken());
-	args1.insert("fields", "id,name,first_name,last_name,link,birthday,picture");
 
 	QString response1;
 	FBApi::getInstance()->InvokeAPI(FBApi::GET,
@@ -44,6 +43,41 @@ FBUser::FBUser(QString uid)
 	this->email = QString::fromStdString(root["email"].asString()); 
 	this->username = QString::fromStdString(root["username"].asString());
 	this->profile_pic = QString::fromStdString(root["picture"]["data"]["url"].asString());
+
+	this->isFullyLoaded = true;
+}
+
+void FBUser::loadEverything(QString uid) {
+
+	QMap<QString, QString> args1;
+    QString ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+uid+"?";
+	args1.insert("access_token",FBApi::getInstance()->GetUserAccessToken());
+
+	QString response1;
+	FBApi::getInstance()->InvokeAPI(FBApi::GET,
+	                                args1,
+	                                response1,
+									ApiURLToInvoke);
+
+	UT::getInstance()->LogToFile("Rerutend from API:"+response1);
+	std::string jsonResponse(response1.toLatin1());
+	Json::Value root;   // will contains the root value after parsing.
+	Json::Reader reader;
+	
+	reader.parse( jsonResponse, root );
+	
+	this->id = QString::fromStdString(root["id"].asString()); 
+	this->name = QString::fromStdString(root["name"].asString()); 
+    this->first_name = QString::fromStdString(root["first_name"].asString()); 
+	this->last_name = QString::fromStdString(root["last_name"].asString()); 
+	this->link = QString::fromStdString(root["link"].asString()); 
+	this->birthday = QString::fromStdString(root["birthday"].asString()); 
+	this->gender = QString::fromStdString(root["gender"].asString()); 
+	this->email = QString::fromStdString(root["email"].asString()); 
+	this->username = QString::fromStdString(root["username"].asString());
+	this->profile_pic = QString::fromStdString(root["picture"]["data"]["url"].asString());
+
+	this->isFullyLoaded = true;
 }
 
 std::vector<FBUser> FBUser::getFriends() 
@@ -115,4 +149,3 @@ std::vector<FBStatusElement> FBUser::getStatuses()
 
 	return statuses;
 }
-

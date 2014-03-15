@@ -27,7 +27,11 @@ class FBUser
 		QString email;
 		QString username;
 		QString profile_pic;
+
+		bool isFullyLoaded = false;
 		
+		void loadEverything(QString uid);
+
 	public: 
 		FBUser* getInstance();
 
@@ -39,7 +43,7 @@ class FBUser
 
 
 		QString getId() {
-		   return id;
+			return id;
 		}
 
 		QString getName() {
@@ -47,29 +51,37 @@ class FBUser
 		}
 
 		QString getFirstName() {
-		   return first_name;
+			if (! isFullyLoaded) loadEverything(id);
+			return first_name;
 		}
 
 		QString getLastName() {
+			if (! isFullyLoaded) loadEverything(id);
 		   return last_name;
 		}
+
 		QString getLink() {
+			if (! isFullyLoaded) loadEverything(id);
 		   return link;
 		}
 
 		QString getBirthday() {
+			if (! isFullyLoaded) loadEverything(id);
 		   return birthday;
 		}
 		
 		QString getGender() {
+			if (! isFullyLoaded) loadEverything(id);
 		   return gender;
 		}
 
 		QString getEmail() {
+			if (! isFullyLoaded) loadEverything(id);
 		   return email;
 		}
 
 		QString getUsername() {
+			if (! isFullyLoaded) loadEverything(id);
 		   return username;
 		}
 
