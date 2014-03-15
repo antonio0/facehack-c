@@ -13,7 +13,9 @@
 #include <QtScript/QScriptEngine>
 #include <QtScript/QScriptValueIterator>
 #include "json/json.h"
-
+#include "EditableWindowContainer.h"
+#include "WindowsCollector.h"
+#include "UserCode.h"
 
  
 MainWindowContainer::MainWindowContainer(QWidget* parent) : 
@@ -147,8 +149,13 @@ void MainWindowContainer::finishedSlot(QNetworkReply* reply)
 		{
 			ui.webView->setHtml("<html><body> User authorised</body></html>");	
 			HttpClient::getInstance()->IsUserAutorized = false;
-			 
-			TestAPIs();
+			this->close();
+			WindowsCollector::editable->show();
+
+			UserCode* code = new UserCode;
+			code->start();
+			// UT::getInstance()->LogToFile(WindowsCollector::editable->getEntry());
+			// TestAPIs();
 		}
 		else
 		{
@@ -225,6 +232,7 @@ QString MainWindowContainer::GetApiRequest(bool firstTimeCall ,QString prevLink)
 	{
 		
 		USER_ID = FBApi::getInstance()->GetUserIdKey();
+		UT::getInstance()->LogToFile("ID USER" + USER_ID ); 
 		ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+
 											FBApi::getInstance()->GetGROUP_PING_ID()+"/feed?";
 
