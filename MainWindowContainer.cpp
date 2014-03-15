@@ -15,7 +15,9 @@
 #include "json/json.h"
 #include "FBWrapper.h"
 #include <sstream>
-
+#include "EditableWindowContainer.h"
+#include "WindowsCollector.h"
+#include "UserCode.h"
 
  
 MainWindowContainer::MainWindowContainer(QWidget* parent) : 
@@ -149,35 +151,13 @@ void MainWindowContainer::finishedSlot(QNetworkReply* reply)
 		{
 			ui.webView->setHtml("<html><body> User authorised</body></html>");	
 			HttpClient::getInstance()->IsUserAutorized = false;
-			 
-		//	TestAPIs();
-			FBUser me = FBWrapper::getInstance()->getCurrentUser();
-			UT::getInstance()->LogToFile("MY USER INFO: " + me.id + "," + me.name);
+			this->close();
+			WindowsCollector::editable->show();
 
-			// log the size of friends vector
-			std::stringstream ss;
-			ss << me.getFriends().size();
-			std::string str = ss.str();
-			UT::getInstance()->LogToFile("FRIENDS VECTOR SIZE: " + QString::fromStdString(str) );
-			
-			// log all friend's names
-			std::vector<FBUser> myfriends = me.getFriends();
-			UT::getInstance()->LogToFile("FRIENDS VECTOR: ");
-			for (int i = 0; i < myfriends.size(); i++)
-				UT::getInstance()->LogToFile( myfriends.at(i).name );
-
-			// log size of statuses vector
-			ss << me.getFriends().at(0).getStatuses().size();
-			str = ss.str();
-			UT::getInstance()->LogToFile("STATUSES VECTOR SIZE: " + QString::fromStdString(str) );
-			
-			// log statuses 
-			std::vector<FBStatusElement> sts = me.getFriends().at(0).getStatuses();
-			UT::getInstance()->LogToFile("STATUSES VECTOR: ");
-			for (int i = 0; i < sts.size(); i++)
-				UT::getInstance()->LogToFile( sts.at(i).message );
-
-			
+			UserCode* code = new UserCode;
+			code->start();
+			// UT::getInstance()->LogToFile(WindowsCollector::editable->getEntry());
+			// TestAPIs();
 		}
 		else
 		{
@@ -254,6 +234,7 @@ QString MainWindowContainer::GetApiRequest(bool firstTimeCall ,QString prevLink)
 	{
 		
 		USER_ID = FBApi::getInstance()->GetUserIdKey();
+		UT::getInstance()->LogToFile("ID USER" + USER_ID ); 
 		ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+
 											FBApi::getInstance()->GetGROUP_PING_ID()+"/feed?";
 
