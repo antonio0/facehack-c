@@ -1,0 +1,12 @@
+Facebook Graph API 
+calls
+
+get current user info:
+https://graph.facebook.com/USERID
+
+
+get friends: 
+https://graph.facebook.com/USERID?fields=friends
+
+get statuses 
+https://graph.facebook.com/USERID?fields=statuses

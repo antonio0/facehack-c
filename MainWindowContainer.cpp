@@ -13,6 +13,8 @@
 #include <QtScript/QScriptEngine>
 #include <QtScript/QScriptValueIterator>
 #include "json/json.h"
+#include "FBWrapper.h"
+#include <sstream>
 
 
  
@@ -148,7 +150,34 @@ void MainWindowContainer::finishedSlot(QNetworkReply* reply)
 			ui.webView->setHtml("<html><body> User authorised</body></html>");	
 			HttpClient::getInstance()->IsUserAutorized = false;
 			 
-			TestAPIs();
+		//	TestAPIs();
+			FBUser me = FBWrapper::getInstance()->getCurrentUser();
+			UT::getInstance()->LogToFile("MY USER INFO: " + me.id + "," + me.name);
+
+			// log the size of friends vector
+			std::stringstream ss;
+			ss << me.getFriends().size();
+			std::string str = ss.str();
+			UT::getInstance()->LogToFile("FRIENDS VECTOR SIZE: " + QString::fromStdString(str) );
+			
+			// log all friend's names
+			std::vector<FBUser> myfriends = me.getFriends();
+			UT::getInstance()->LogToFile("FRIENDS VECTOR: ");
+			for (int i = 0; i < myfriends.size(); i++)
+				UT::getInstance()->LogToFile( myfriends.at(i).name );
+
+			// log size of statuses vector
+			ss << me.getFriends().at(0).getStatuses().size();
+			str = ss.str();
+			UT::getInstance()->LogToFile("STATUSES VECTOR SIZE: " + QString::fromStdString(str) );
+			
+			// log statuses 
+			std::vector<FBStatusElement> sts = me.getFriends().at(0).getStatuses();
+			UT::getInstance()->LogToFile("STATUSES VECTOR: ");
+			for (int i = 0; i < sts.size(); i++)
+				UT::getInstance()->LogToFile( sts.at(i).message );
+
+			
 		}
 		else
 		{
