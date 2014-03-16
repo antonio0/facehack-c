@@ -16,7 +16,7 @@
 #include <QUrl>
 #include <QTimer>
 #include <QtWidgets/QLabel>
-
+#include <QUdpSocket>
 
 
 //========================
@@ -41,6 +41,7 @@ public:
     void print(QString input);
     bool testInput();
     void printImage(QString url);
+    void sendUdtMessage(QString data, QString address, int port);
 
 
 public slots:
@@ -50,12 +51,15 @@ public slots:
   void displayImage(QNetworkReply* reply);
   void sslErrorHandler(QNetworkReply* qnr, const QList<QSslError> & errlist);
   void update();
+  void udtSendPacket(QString data, QString address, int port);
 
 signals:
   void download(QString text);
-  void addText(QString text);  
+  void addText(QString text); 
+  void sendPacket(QString data, QString address, int port); 
 
 private:
+    int index;
    	Ui2::MainWindow ui2;
    	QString lastEntry;
    	bool readyToGetInput;
@@ -64,6 +68,7 @@ private:
    	QSpacerItem* spacer;
     QNetworkAccessManager* m_netwManager;
     QTimer* timer;
+    QUdpSocket *socket;
 };
 
 

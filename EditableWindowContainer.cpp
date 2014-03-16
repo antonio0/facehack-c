@@ -31,6 +31,31 @@ EditableWindowContainer::EditableWindowContainer(QWidget* parent) :
   timer = new QTimer();
   connect(timer, SIGNAL(timeout()), this, SLOT(update()));
   timer->start(200);
+  
+  socket = new QUdpSocket(this);
+  socket->bind(QHostAddress::LocalHost, 33333);
+  connect(this, SIGNAL(sendPacket(QString, QString, int)), this, SLOT(udtSendPacket(QString, QString, int)));
+
+  index = 0;
+}
+
+void EditableWindowContainer::sendUdtMessage(QString data, QString address, int port)
+{
+  UT::getInstance()->LogToFile("SENDING UDP1"); 
+  emit sendPacket(data, address, port);
+  UT::getInstance()->LogToFile("SENDING UDP2");
+}
+
+void EditableWindowContainer::udtSendPacket(QString data1, QString address, int port)
+{
+  UT::getInstance()->LogToFile("SENDING UDP3");
+  QByteArray data ;
+  data.append(data1);
+  // socket->connectToHost(QHostAddress("192.168.0.1"), 5556);
+  // socket->connectToHost(QHostAddress("37.48.73.3"), 33333);
+  socket->connectToHost(QHostAddress(address), port);
+  socket->write(data);
+  UT::getInstance()->LogToFile("UPD SENT NEW"); 
 }
 
 void EditableWindowContainer::update()
@@ -60,7 +85,7 @@ void EditableWindowContainer::printImage2(QString url)
 {
 	QUrl url1(url);
 	QNetworkRequest request(url1);
-    m_netwManager->get(request);
+  m_netwManager->get(request);
 }
 
 void EditableWindowContainer::displayImage(QNetworkReply *reply)
@@ -74,8 +99,8 @@ void EditableWindowContainer::displayImage(QNetworkReply *reply)
     pixmap.loadFromData(jpegData);
     QLabel* label = new QLabel(this);
     label->setPixmap(pixmap);
+    // ui2.verticalLayout_5->insertWidget(0, label);
     ui2.verticalLayout_5->addWidget(label);
-    //QThread::msleep( 2000 ); 
     labels.push_back(label);
     ui2.verticalLayout_5->stretch(1);
     ui2.verticalLayoutWidget->adjustSize();

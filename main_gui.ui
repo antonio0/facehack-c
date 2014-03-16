@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>My Facebook App</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QWidget" name="verticalLayoutWidget">
@@ -35,7 +35,7 @@
        <item>
         <widget class="QPushButton" name="submitLine">
          <property name="text">
-          <string>PushButton</string>
+          <string>Input Text</string>
          </property>
         </widget>
        </item>
