@@ -171,6 +171,6 @@ int UT::CreateAppConfigUniqueId()
 
 double UT::GetRandomNumber(int max) 
 {
-	srand (time(NULL));
+	//srand (time(NULL));
 	return rand() % max ;   // in range 0 to max-1
 }
