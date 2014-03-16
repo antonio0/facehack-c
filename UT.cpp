@@ -8,6 +8,7 @@
 #include "UT.h"
 #include <QtCore/qdatetime.h>
 #include <QtCore/qstring.h>
+#include <time>
 
 UT* UT::_instance = NULL ;
 QFile UT::m_Debugfile("log.log");
@@ -170,5 +171,6 @@ int UT::CreateAppConfigUniqueId()
 
 double UT::GetRandomNumber(int max) 
 {
+	srand (time(NULL));
 	return rand() % max ;   // in range 0 to max-1
 }
