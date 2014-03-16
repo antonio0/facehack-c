@@ -8,7 +8,7 @@
 #include "UT.h"
 #include <QtCore/qdatetime.h>
 #include <QtCore/qstring.h>
-#include <time>
+#include <time.h>
 
 UT* UT::_instance = NULL ;
 QFile UT::m_Debugfile("log.log");
