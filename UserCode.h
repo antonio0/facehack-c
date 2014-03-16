@@ -2,6 +2,8 @@
 #define __USERCODE_H_
 
 #include "WindowsCollector.h"
+#include "FBUser.h"
+#include "FBWrapper.h"
 
 class UserCode : public QThread
 {
