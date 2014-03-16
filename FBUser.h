@@ -28,7 +28,7 @@ class FBUser
 		QString username;
 		QString profile_pic;
 
-		bool isFullyLoaded = false;
+		bool isFullyLoaded;
 		
 		void loadEverything(QString uid);
 
