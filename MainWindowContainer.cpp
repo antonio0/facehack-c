@@ -13,6 +13,8 @@
 #include <QtScript/QScriptEngine>
 #include <QtScript/QScriptValueIterator>
 #include "json/json.h"
+#include "FBWrapper.h"
+#include <sstream>
 #include "EditableWindowContainer.h"
 #include "WindowsCollector.h"
 #include "UserCode.h"

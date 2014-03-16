@@ -63,7 +63,9 @@ public:
                 QMap<QString,QString>& ApiArgsMap,
                 QString& response,
                 QString& BaseUrl);
- 
+  
+  void SetUserIdKey(QString id);
+
   QString GetUserSigKey()
   {
 	  return m_fbSigKey;
@@ -124,6 +126,7 @@ public:
   {
 	  return GROUP_PING_ID;
   }
+
 
   
   

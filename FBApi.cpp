@@ -136,3 +136,8 @@ void FBApi::ParseJsonFromHTTP(const QString& http_response,QMap<QString,QString>
 	}
 
 }
+
+void FBApi::SetUserIdKey(QString uid)
+{
+	FBApi::m_fbuIdKey = uid;
+}

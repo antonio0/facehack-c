@@ -10,12 +10,13 @@
 
 #include "ui_main_gui.h"
 #include <QtGui> 
-#include <QtWidgets>
 #include <QtNetwork/QNetworkAccessManager>
 #include <QtNetwork/QNetworkRequest>
 #include <QtNetwork/qnetworkreply.h>
- #include <QUrl>
+#include <QUrl>
 #include <QTimer>
+#include <QtWidgets/QLabel>
+
 
 
 //========================
