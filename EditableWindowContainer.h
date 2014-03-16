@@ -11,6 +11,11 @@
 #include "ui_main_gui.h"
 #include <QtGui> 
 #include <QtWidgets>
+#include <QtNetwork/QNetworkAccessManager>
+#include <QtNetwork/QNetworkRequest>
+#include <QtNetwork/qnetworkreply.h>
+ #include <QUrl>
+#include <QTimer>
 
 
 //========================
@@ -34,13 +39,20 @@ public:
     QString getEntry();
     void print(QString input);
     bool testInput();
+    void printImage(QString url);
+
 
 public slots:
+  void printImage2(QString url);
 	void newEntry();
 	void addTextToDisplay(QString);
+  void displayImage(QNetworkReply* reply);
+  void sslErrorHandler(QNetworkReply* qnr, const QList<QSslError> & errlist);
+  void update();
 
 signals:
-   void addText(QString text);  
+  void download(QString text);
+  void addText(QString text);  
 
 private:
    	Ui2::MainWindow ui2;
@@ -48,6 +60,9 @@ private:
    	bool readyToGetInput;
    	QMutex mutex;
    	std::vector<QLabel*> labels;
+   	QSpacerItem* spacer;
+    QNetworkAccessManager* m_netwManager;
+    QTimer* timer;
 };
 
 
