@@ -53,7 +53,7 @@ class UT
 	        
 	    } AppConfig;
 
-	    static int GetRandomInt(int max);
+	    static double GetRandomNumber(int max);
 		
         
     private:

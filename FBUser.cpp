@@ -9,7 +9,7 @@
 FBUser::FBUser(QString uid, QString name, QString picture_url) 
 {
 	isFullyLoaded = false;
-	
+
 	this->id = uid;
 	this->name = name;
 	this->profile_pic = picture_url;
