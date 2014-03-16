@@ -88,6 +88,8 @@ class FBUser
 		QString getProfilePic() {
 		   return profile_pic;
 		}
+
+		void postToWall(QString message);
 };
 
 #endif

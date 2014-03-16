@@ -149,3 +149,18 @@ std::vector<FBStatusElement> FBUser::getStatuses()
 
 	return statuses;
 }
+
+
+void FBUser::postToWall(QString message) 
+{
+	QMap<QString, QString> args1;
+    QString ApiURLToInvoke = FBApi::getInstance()->GetGENERAL_API_URL()+"/"+this->id+"/feed?";
+	args1.insert("access_token",FBApi::getInstance()->GetUserAccessToken());
+	args1.insert("message", message);
+
+	QString response1;
+	FBApi::getInstance()->InvokeAPI(FBApi::POST,
+	                                args1,
+	                                response1,
+									ApiURLToInvoke);
+}
