@@ -94,10 +94,12 @@ void EditableWindowContainer::displayImage(QNetworkReply *reply)
     	UT::getInstance()->LogToFile("NETWORK 2 ERROR");
         return;
     }
+        QLabel* label = new QLabel(this);
+        ui2.verticalLayout_5->addWidget(label);
+
     QByteArray jpegData = reply->readAll();
     QPixmap pixmap;
     pixmap.loadFromData(jpegData);
-    QLabel* label = new QLabel(this);
     label->setPixmap(pixmap);
     // ui2.verticalLayout_5->insertWidget(0, label);
     ui2.verticalLayout_5->addWidget(label);
