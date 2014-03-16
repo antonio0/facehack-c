@@ -4,6 +4,8 @@
 #include "WindowsCollector.h"
 #include "FBUser.h"
 #include "FBWrapper.h"
+#include <QThread>
+
 
 class UserCode : public QThread
 {
