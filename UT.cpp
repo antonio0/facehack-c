@@ -167,3 +167,8 @@ int UT::CreateAppConfigUniqueId()
     IncreaseByOneUniqueId();
     return AppConfig.unique_id;
 }
+
+int UT::GetRandomInt(int max) 
+{
+	return rand() % max ;   // in range 0 to max-1
+}
